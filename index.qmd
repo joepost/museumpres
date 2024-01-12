@@ -18,6 +18,10 @@ format:
 
 -   Support department to transition away from archaic manual processes
 
+::: {.notes}
+Speaker notes go here.
+:::
+
 ---
 
 ## Challenge {background-color=rgba(51,51,51,255)}
@@ -31,6 +35,10 @@ Infection prevention nursing team (IP) use paper records and Excel to trace cont
     3.  IP downloads table of entry/exit times for all patients for each contact ward
     4.  IP manually checks through list to identify contacts against criteria
 
+:::
+
+::: {.notes}
+Speaker notes go here.
 :::
 
 ---
@@ -55,29 +63,51 @@ Needed to be...
 
 -   transparent (not a 'black box')
 
--   secure (contains )
+-   secure (contains confidential patient record data)
 
-
+::: {.notes}
+Speaker notes go here.
+:::
 
 ---
 
 ## Process {background-color=rgba(51,51,51,255)}
 
-1.    Set up an SQL extract for pathology and ward location data from the central data warehouse 
+1.    Set up an SQL extract for pathology and ward location data from the hospital's central data warehouse 
 
-2.    Develop an R shiny app to visualise the patient and room locations in a Gantt chart style
+2.    Develop an R shiny app to visualise the patient and room locations in a Gantt-style chart
 
-3.    Host shiny app on internal server with protected access (IP team only)
+3.    Automatically identify and highlight patient contacts that meet specified criteria 
 
+4.    Host shiny app on internal server with protected access (IP team only)
+
+::: {.notes}
+
+Worked with the central IT team to gain access to the data warehouse, 
+
+:::
 
 ---
 
 ## Outcome {background-color=rgba(51,51,51,255)}
-
-The tool was implemented after a 3-month validation period (where both processes were performed and compared).  
-
 ::: incremental
+-   The tool was implemented after a 3-month validation period (where both processes were performed and compared).  
 
-The team presented the tool at the [Australasian College for Infection Prevention and Control (ACIPC) International Conference](https://acipcconference.com.au/events/two-heads-are-better-than-one-collaboration-and-implementation-of-novel-data-analytics-for-rapid-outbreak-detection-in-a-large-victorian-healthcare-facility/) in 2021. 
+-   Significantly faster than previous manual process
+
+-   Easier to integrate IP contact tracing into reporting and audit workflows 
+
+-   Presented the tool at the [Australasian College for Infection Prevention and Control (ACIPC) International Conference](https://acipcconference.com.au/events/two-heads-are-better-than-one-collaboration-and-implementation-of-novel-data-analytics-for-rapid-outbreak-detection-in-a-large-victorian-healthcare-facility/) in 2021. 
+:::
+
+::: {.notes}
+
+A 3-month validation process was used to monitor the accuracy of the tool, in comparison to the previous method. It also gave a period of training and familiarity with the tool to the IP team, so that they were confident and ready to use it once implemented in standard practice. This particularly also helped build buy-in from the broader IP team, as they saw in practice the time and work saved by the new process. 
+
+The time and workload saving became especially valuable as the Department continued to grapple with the massive workload change of the COVID pandemic.
+
+Having the data in ready-to-use format made it easier to integrate into downstream reporting, such as quarterly audits that captured the total cases and contacts identified, and the positivity rate for transmission. 
+
+The success of the tool's implementation in the Infectious Diseases Department was reflected in a presentation at the ACIPC International Conference. 
 
 :::
