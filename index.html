@@ -323,7 +323,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-color="rgba(51,51,51,255)" class="quarto-title-block center">
   <h1 class="title">Alfred Hospital TraceR Tool</h1>
   <p class="subtitle">Development of an R tool for contact tracing and infection prevention</p>
 
@@ -336,7 +336,7 @@ Joe Post
 </div>
 
 </section>
-<section id="context" class="slide level2">
+<section id="context" class="slide level2" data-background-color="rgba(51,51,51,255)">
 <h2>Context</h2>
 <ul>
 <li><p>Working in the data team of Alfred Hospital’s Infectious Diseases Department (Melbourne, Australia)</p></li>
@@ -344,11 +344,9 @@ Joe Post
 <li><p>Support department to transition away from archaic manual processes</p></li>
 </ul>
 </section>
-<section id="challenge" class="slide level2">
+<section id="challenge" class="slide level2" data-background-color="rgba(51,51,51,255)">
 <h2>Challenge</h2>
-<ul>
-<li>Infection prevention (IP) nursing team use paper records and Excel to trace contacts</li>
-</ul>
+<p>Infection prevention nursing team (IP) use paper records and Excel to trace contacts.</p>
 <div>
 <ul>
 <li class="fragment">Process:
@@ -358,14 +356,38 @@ Joe Post
 <li class="fragment">IP downloads table of entry/exit times for all patients for each contact ward</li>
 <li class="fragment">IP manually checks through list to identify contacts against criteria</li>
 </ol></li>
-<li class="fragment">Time-consuming, error-prone, and poorly documented</li>
 </ul>
 </div>
 </section>
-<section id="solution" class="slide level2">
+<section id="challenge-1" class="slide level2" data-background-color="rgba(51,51,51,255)">
+<h2>Challenge</h2>
+<p>Infection prevention nursing team (IP) use paper records and Excel to trace contacts.</p>
+<p>This is <strong>time-consuming</strong>, <strong>error prone</strong>, and <strong>poorly documented</strong>.</p>
+</section>
+<section id="solution" class="slide level2" data-background-color="rgba(51,51,51,255)">
 <h2>Solution</h2>
 <p>Our aim was to build a tool that would both <strong>automate</strong> and <strong>visualise</strong> the contact tracing process for the IP clinicians.</p>
-<p>Needs to be simple to use and intuitive for end-users (non-coders).</p>
+<p>Needed to be…</p>
+<ul>
+<li><p>simple to use and intuitive for end-users (non-coders)</p></li>
+<li><p>transparent (not a ‘black box’)</p></li>
+<li><p>secure (contains )</p></li>
+</ul>
+</section>
+<section id="process" class="slide level2" data-background-color="rgba(51,51,51,255)">
+<h2>Process</h2>
+<ol type="1">
+<li><p>Set up an SQL extract for pathology and ward location data from the central data warehouse</p></li>
+<li><p>Develop an R shiny app to visualise the patient and room locations in a Gantt chart style</p></li>
+<li><p>Host shiny app on internal server with protected access (IP team only)</p></li>
+</ol>
+</section>
+<section id="outcome" class="slide level2" data-background-color="rgba(51,51,51,255)">
+<h2>Outcome</h2>
+<p>The tool was implemented after a 3-month validation period (where both processes were performed and compared).</p>
+<div>
+<p>The team presented the tool at the <a href="https://acipcconference.com.au/events/two-heads-are-better-than-one-collaboration-and-implementation-of-novel-data-analytics-for-rapid-outbreak-detection-in-a-large-victorian-healthcare-facility/">Australasian College for Infection Prevention and Control (ACIPC) International Conference</a> in 2021.</p>
+</div>
 <div class="footer footer-default">
 
 </div>

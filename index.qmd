@@ -2,13 +2,15 @@
 title: "Alfred Hospital \nTraceR Tool"
 subtitle: "Development of an R tool for contact tracing and infection prevention"
 author: "Joe Post"
+title-slide-attributes:
+  data-background-color: rgba(51,51,51,255)
 format: 
   revealjs:
     theme: night
     # logo: nhm_logo.png
 ---
 
-## Context
+## Context {background-color=rgba(51,51,51,255)}
 
 -   Working in the data team of Alfred Hospital's Infectious Diseases Department (Melbourne, Australia)
 
@@ -18,9 +20,9 @@ format:
 
 ---
 
-## Challenge
+## Challenge {background-color=rgba(51,51,51,255)}
 
--   Infection prevention (IP) nursing team use paper records and Excel to trace contacts
+Infection prevention nursing team (IP) use paper records and Excel to trace contacts.
 
 ::: incremental
 -   Process:
@@ -28,14 +30,54 @@ format:
     2.  IP accesses patient records and ward history
     3.  IP downloads table of entry/exit times for all patients for each contact ward
     4.  IP manually checks through list to identify contacts against criteria
--   Time-consuming, error-prone, and poorly documented
 
 :::
 
 ---
 
-## Solution
+## Challenge {background-color=rgba(51,51,51,255)}
+
+Infection prevention nursing team (IP) use paper records and Excel to trace contacts.
+
+\n \n 
+
+This is **time-consuming**, **error prone**, and **poorly documented**.
+
+---
+
+## Solution {background-color=rgba(51,51,51,255)}
 
 Our aim was to build a tool that would both **automate** and **visualise** the contact tracing process for the IP clinicians.
 
-Needs to be simple to use and intuitive for end-users (non-coders).
+Needed to be... 
+
+-   simple to use and intuitive for end-users (non-coders)
+
+-   transparent (not a 'black box')
+
+-   secure (contains )
+
+
+
+---
+
+## Process {background-color=rgba(51,51,51,255)}
+
+1.    Set up an SQL extract for pathology and ward location data from the central data warehouse 
+
+2.    Develop an R shiny app to visualise the patient and room locations in a Gantt chart style
+
+3.    Host shiny app on internal server with protected access (IP team only)
+
+
+---
+
+## Outcome {background-color=rgba(51,51,51,255)}
+
+The tool was implemented after a 3-month validation period (where both processes were performed and compared).  
+
+::: incremental
+
+The team presented the tool at the [Australasian College for Infection Prevention and Control (ACIPC) International Conference](https://acipcconference.com.au/events/two-heads-are-better-than-one-collaboration-and-implementation-of-novel-data-analytics-for-rapid-outbreak-detection-in-a-large-victorian-healthcare-facility/) in 2021. 
+
+:::
