@@ -22,22 +22,20 @@ format:
 
 -   Infection prevention (IP) nursing team use paper records and Excel to trace contacts
 
-::: {.incremental}
+::: incremental
 -   Process:
     1.  Pathology notifies IP of resistant test result
     2.  IP accesses patient records and ward history
     3.  IP downloads table of entry/exit times for all patients for each contact ward
     4.  IP manually checks through list to identify contacts against criteria
+-   Time-consuming, error-prone, and poorly documented
 
-- Time-consuming, error-prone, and poorly documented
 :::
 
 ---
 
 ## Solution
 
-Our aim was to build a tool that would both **automate** and **visualise** the contact tracing process for the IP clinicians.  
+Our aim was to build a tool that would both **automate** and **visualise** the contact tracing process for the IP clinicians.
 
-Needs to be simple to use and intuitive for end-users (non-coders). 
-
-
+Needs to be simple to use and intuitive for end-users (non-coders).

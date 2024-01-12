@@ -1,0 +1,41 @@
+---
+title: "Alfred Hospital \nTraceR Tool"
+subtitle: "Development of an R tool for contact tracing and infection prevention"
+author: "Joe Post"
+format: 
+  revealjs:
+    theme: night
+    # logo: nhm_logo.png
+---
+
+## Context
+
+-   Working in the data team of Alfred Hospital's Infectious Diseases Department (Melbourne, Australia)
+
+-   Focus on **healthcare acquired infections**, **antimicrobial resistance**, and **notifiable diseases**
+
+-   Support department to transition away from archaic manual processes
+
+---
+
+## Challenge
+
+-   Infection prevention (IP) nursing team use paper records and Excel to trace contacts
+
+::: incremental
+-   Process:
+    1.  Pathology notifies IP of resistant test result
+    2.  IP accesses patient records and ward history
+    3.  IP downloads table of entry/exit times for all patients for each contact ward
+    4.  IP manually checks through list to identify contacts against criteria
+-   Time-consuming, error-prone, and poorly documented
+
+:::
+
+---
+
+## Solution
+
+Our aim was to build a tool that would both **automate** and **visualise** the contact tracing process for the IP clinicians.
+
+Needs to be simple to use and intuitive for end-users (non-coders).

@@ -1,12 +1,12 @@
 {
-    "id": "237A53B0",
-    "path": "~/Uni/UCL CASA/gisprojects/museumpres/museumpres.qmd",
-    "project_path": "museumpres.qmd",
+    "id": "E3CE6CDF",
+    "path": "~/Uni/UCL CASA/gisprojects/museumpres/index.qmd",
+    "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "133669535",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1705057951908.0,
+    "created": 1705062833905.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
@@ -16,17 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "595:194",
-        "cursorPosition": "42,0",
-        "scrollLine": "19",
-        "ignored_words": "visualise\n"
+        "cursorPosition": "5,11",
+        "scrollLine": "0",
+        "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1705061485,
+    "lastKnownWriteTime": 1705062853,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1705061485313,
+    "last_content_update": 1705062853379,
     "read_only": false,
     "read_only_alternatives": []
 }
